@@ -161,3 +161,17 @@
 @media(max-width:760px) { .orbit-shell { display:block; }.sidebar { display:none; }.topbar { height:62px; padding:0 18px; }.content { padding:25px 17px 105px; }.breadcrumb { font-size:11px; }.top-actions { gap:8px; }.profile-select { max-width:100px; }.date-stack { display:none; }.head-row { margin-bottom:22px; }.display { font-size:32px; }.ask-panel { padding:19px; margin-bottom:29px; }.ask-head span { display:none; }.dashboard-grid,.content-grid,.route-layout,.split-layout,.event-grid { grid-template-columns:1fr; }.quick-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }.feature-card { min-height:290px; }.mobile-nav { display:flex; position:fixed; bottom:0; left:0; right:0; background:var(--ink); z-index:50; padding:8px 5px max(8px,env(safe-area-inset-bottom)); justify-content:space-around; box-shadow:0 -6px 25px oklch(.1 .01 210 / 15%); }.mobile-nav button { border:0; background:none; color:oklch(.7 .01 210); display:grid; justify-items:center; gap:4px; font-size:9px; font-weight:750; width:20%; }.mobile-nav button.active { color:var(--lime); }.mobile-nav svg { width:19px; height:19px; }.map-canvas { height:320px; } }
 @media(max-width:460px) { .quick-grid { grid-template-columns:1fr; }.topbar .breadcrumb span { display:none; }.surface-card { padding:18px; }.event-visual { margin:-18px -18px 18px; }.metric { min-width:75px; padding:10px; }.toolbar .pill-tabs { width:100%; }.pill-tabs button { flex:1; padding-inline:7px; }.ask-chips .ask-chip:nth-child(n+4) { display:none; } }
 @media(prefers-reduced-motion:reduce) { *,*:before,*:after { animation-duration:.01ms!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } }
+@media(max-width:760px) {
+  .topbar { gap:6px; }
+  .topbar .breadcrumb { flex:none; }
+  .topbar .breadcrumb strong { font-size:10px; }
+  .top-actions { min-width:0; gap:4px; }
+  .top-actions > .demo-pill { display:none; }
+  .top-actions .profile-select { max-width:100px; font-size:11px; }
+  .top-actions .avatar { width:29px; height:29px; font-size:10px; }
+  .top-actions > button { width:30px; min-width:30px; height:30px; }
+}
+@media(max-width:380px) {
+  .top-actions .profile-select { max-width:82px; }
+  .topbar .breadcrumb svg { display:none; }
+}
